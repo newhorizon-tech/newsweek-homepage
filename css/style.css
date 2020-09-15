@@ -1,47 +1,48 @@
 body {
   width: 100%;
+  max-width: 1309px;
   /* margin: 0;
   padding: 0; */
 }
 /* Navigation bar */
-.navbar {
+.top-bar {
   background-color: #f72210;
   width: 100%;
 }
 
-nav .navbar-brand {
-  margin-right: auto;
+.navbar-brand {
+  height: 100%;
 }
 
 .side-nav {
-  width: 20%;
-  height: 60%;
-  padding: 1% 0;
+  padding: 0;
 }
 
-.fa-user {
+.side-nav .fa-user {
   color: #fdc7c3;
-  font-size: 130%;
+  font-size: 100%;
+  padding-right: 12px;
 }
 
-.navbar .btn {
+.side-nav .btn {
+  padding: 0 12px;
   border: none;
   border-radius: 24px;
-  font-family: Roboto Condensed;
-  font-weight: bold;
-  padding: 0 1%;
+  font: bold 13px/24px "Roboto Condensed",sans-serif;
 }
 
-.navbar button,
-.navbar i {
-  margin-right: 1%;
+.top-bar button,
+.top-bar i {
   margin-left: 1%;
 }
 
-.side-nav .navbar-toggler {
+.navbar-toggler {
   border: 0;
   padding: 0;
+  border-color: #f72210 !important;
 }
+
+
 /* Body  */
 img {
   width: 100%;
@@ -52,11 +53,17 @@ img {
   border: 1px solid black;
   margin: 1%;
 }
+.col-title{
+  font-family: "Roboto Condensed", sans-serif;
+  color:#9a9a9a;
+  font-size: 16px;
+  font-weight: bold;
+}
 
 .col1,
 .col2,
 .col3 {
-  padding-left: 15px;
+  padding-left: 0;
   padding-right: 15px;
 }
 
@@ -84,27 +91,60 @@ img {
 }
 /* ---------------------------
     Media Query (>640px) */
-
 @media (min-width:640px) {
-
   .big-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 'one two'
-                          'three three';
+    grid-template-areas: 'one two' 'three three';
     background-color: #2196F3;
     grid-gap: 2px;
   }
 }
 
-/* ---------------------------
-    Media Query (>640px) */
+@media (max-width:991px){
+  /* Bottom Header */
 
+  header .bottom-menu {
+    display:none !important;
+  }
+
+}
+/* ---------------------------
+    Media Query (>991px) */
 @media (min-width:992px) {
+
+
+
+header .bottom-menu {
+    padding:0 1rem !important;
+    height: 54px;
+    background-color: white;
+    width: 100%;
+    display:initial;
+    border-bottom: 1px solid #dedede;
+  }
+
+  header .bottom-list {
+    width: 80%;
+  }
+
+  .nav-link{
+    color:black;
+  }
+  .search .input-group .form-control {
+    width: 60px;
+    font-size: 11px;
+    border: 0px;
+
+  }
+
+.input-group-btn .btn{
+  background-color: white;
+}
 
   .big-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: 'one two three';
     background-color: #2196F3;
     grid-gap: 2px;

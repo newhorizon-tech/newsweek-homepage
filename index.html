@@ -10,17 +10,44 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
-<body>
-  <nav class="navbar navbar-dark justify-content-end align-items-center flex-nowrap">
-    <div class="navbar-brand"><a href="http://test.com"><img src="img/logo-small.png" alt="Newsweek logo"></a></div>
-    <!-- <div class="side-nav flex-row"> -->
-    <i class="fas fa-user"></i>
-    <button class="btn btn-warning">Subscribe > </button>
-    <button class="navbar-toggler" type="button">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-  </nav>
+<body class="m-auto">
+  <header class="d-flex flex-column">
+    <nav class="top-bar navbar navbar-expand-lg navbar-dark align-items-center flex-nowrap">
+      <div class="navbar-brand mr-auto"><a href="http://test.com"><img src="img/logo-small.png" alt="Newsweek logo"></a></div>
+      <div class="side-nav d-flex flex-row justify-content-around align-items-center ml-auto">
+        <i class="fas fa-user"></i>
+        <button class="btn btn-warning">Subscribe > </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggle-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <div class="bottom-menu navbar collapse navbar-collapse w-100 d-flex flex-row justify-content-start" id="toggle-menu">
+      <ul class="bottom-list navbar navbar-nav d-flex flex-row justify-content-around">
+        <li class="nav-item"><a class="nav-link" href="#">U.S.</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">World</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Business</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Tech & Science</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Culture</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Newsgeek</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Sports</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Health</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">The Debate</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Vantage</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Weather</a></li>
+      </ul>
+      <div class="search">
+        <form>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="search">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
 
 
   <main>
@@ -37,13 +64,14 @@
       </section> -->
 
       <div class="col1">
+        <div class="col-title">FEATURED STORIES</div>
         <article class="story container-sm d-flex flex-column justify-content-start">
           <div class="wrap">
-            <img src="img/top-story.jpg" alt="">
+            <img src="img/feature-1.jpg" alt="">
             <div class="category">
-              <a href="/us"> U.S.</a </div>
-              <h2>San Francisco Residents Share Videos, Photos Of 'Apocalyptic' Skies As Wildfires Burn Nearby</h2>
-                <p>The afternoon skies were bright orange in San Francisco on Wednesday as nearby wildfires continue to blaze across the state.</p>
+              <a href="#"> MY TURN</a </div>
+              <h2>'I'm Working on a COVID-19 Vaccine'</h2>
+              <p>Since August 26 I have been running trials of a vaccine for COVID-19. Towards the end of the year I think it will be possible to have early indicators as to how effective this vaccine is and whether it can be submitted for FDA approval.</p>
         </article>
         <article class="story container-sm d-flex flex-column justify-content-start">
           <div class="wrap">
@@ -51,7 +79,7 @@
             <div class="category">
               <a href="/us"> U.S.</a </div>
               <h2>San Francisco Residents Share Videos, Photos Of 'Apocalyptic' Skies As Wildfires Burn Nearby</h2>
-                <p>The afternoon skies were bright orange in San Francisco on Wednesday as nearby wildfires continue to blaze across the state.</p>
+              <p>The afternoon skies were bright orange in San Francisco on Wednesday as nearby wildfires continue to blaze across the state.</p>
         </article>
         <article class="story container-sm d-flex flex-column justify-content-start">
           <div class="wrap">
@@ -59,17 +87,18 @@
             <div class="category">
               <a href="/us"> U.S.</a </div>
               <h2>San Francisco Residents Share Videos, Photos Of 'Apocalyptic' Skies As Wildfires Burn Nearby</h2>
-                <p>The afternoon skies were bright orange in San Francisco on Wednesday as nearby wildfires continue to blaze across the state.</p>
+              <p>The afternoon skies were bright orange in San Francisco on Wednesday as nearby wildfires continue to blaze across the state.</p>
         </article>
       </div>
       <div class="col2">
+          <div class="col-title">TOP STORY</div>
         <article class="story container-sm d-flex flex-column justify-content-start">
           <div class="wrap">
             <img src="img/top-story.jpg" alt="">
             <div class="category">
               <a href="/us"> U.S.</a </div>
               <h2>San Francisco Residents Share Videos, Photos Of 'Apocalyptic' Skies As Wildfires Burn Nearby</h2>
-                <p>The afternoon skies were bright orange in San Francisco on Wednesday as nearby wildfires continue to blaze across the state.</p>
+              <p>The afternoon skies were bright orange in San Francisco on Wednesday as nearby wildfires continue to blaze across the state.</p>
         </article>
         <!-- <article class="story container-sm d-flex flex-column justify-content-start">
           <div class="wrap">
@@ -85,17 +114,18 @@
             <div class="category">
               <a href="/us"> U.S.</a </div>
               <h2>San Francisco Residents Share Videos, Photos Of 'Apocalyptic' Skies As Wildfires Burn Nearby</h2>
-                <p>The afternoon skies were bright orange in San Francisco on Wednesday as nearby wildfires continue to blaze across the state.</p>
+              <p>The afternoon skies were bright orange in San Francisco on Wednesday as nearby wildfires continue to blaze across the state.</p>
         </article>
       </div>
       <div class="col3">
+          <div class="col-title">THE DEBATE</div>
         <article class="story container-sm d-flex flex-column justify-content-start">
           <div class="wrap">
             <img src="img/top-story.jpg" alt="">
             <div class="category">
               <a href="/us"> U.S.</a </div>
               <h2>San Francisco Residents Share Videos, Photos Of 'Apocalyptic' Skies As Wildfires Burn Nearby</h2>
-                <p>The afternoon skies were bright orange in San Francisco on Wednesday as nearby wildfires continue to blaze across the state.</p>
+              <p>The afternoon skies were bright orange in San Francisco on Wednesday as nearby wildfires continue to blaze across the state.</p>
         </article>
         <article class="story container-sm d-flex flex-column justify-content-start">
           <div class="wrap">
@@ -103,7 +133,7 @@
             <div class="category">
               <a href="/us"> U.S.</a </div>
               <h2>San Francisco Residents Share Videos, Photos Of 'Apocalyptic' Skies As Wildfires Burn Nearby</h2>
-                <p>The afternoon skies were bright orange in San Francisco on Wednesday as nearby wildfires continue to blaze across the state.</p>
+              <p>The afternoon skies were bright orange in San Francisco on Wednesday as nearby wildfires continue to blaze across the state.</p>
         </article>
         <article class="story container-sm d-flex flex-column justify-content-start">
           <div class="wrap">
@@ -111,9 +141,11 @@
             <div class="category">
               <a href="/us"> U.S.</a </div>
               <h2>San Francisco Residents Share Videos, Photos Of 'Apocalyptic' Skies As Wildfires Burn Nearby</h2>
-                <p>The afternoon skies were bright orange in San Francisco on Wednesday as nearby wildfires continue to blaze across the state.</p>
+              <p>The afternoon skies were bright orange in San Francisco on Wednesday as nearby wildfires continue to blaze across the state.</p>
         </article>
       </div>
+    </section>
+    <section class="in-the-mag">
     </section>
   </main>
 </body>

@@ -2,7 +2,7 @@ body {
   width: 100%;
   max-width: 1309px;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 13px
+  font-size: 13px;
   /* margin: 0;
   padding: 0; */
 }
@@ -145,6 +145,40 @@ img {
   color: #f72210;
   padding: 1% 2% 1%;
 }
+/* Subscribe */
+
+/* Newsletter */
+
+/* Footer */
+
+footer {
+  background-color: #fff;
+}
+
+.foot-line {
+  flex-direction: column;
+}
+
+footer img {
+  height: 36px;
+  width: 236px;
+  margin: 0 15px 12px 0;
+}
+
+.share-icons {
+  margin-bottom: 12px;
+}
+
+.share-icons i{
+  font-size: 26px;
+  margin-left: 10px;
+}
+
+.trademark {
+  margin-bottom: 12px;
+  font-size: 12px;
+  font-family: Arial;
+}
 
 /* ---------------------------
     Media Query (>640px) */
@@ -155,6 +189,12 @@ img {
     grid-template-areas: 'one two' 'three three';
     background-color: #2196F3;
     grid-gap: 2px;
+  }
+}
+
+@media (min-width:767px) {
+  .foot-line {
+    flex-direction: row;
   }
 }
 

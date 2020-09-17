@@ -50,17 +50,7 @@
   </header>
   <main>
     <section class="big-grid">
-      <!-- <section class="top-story">
-        <article class="story container-sm d-flex flex-column justify-content-start">
-          <div class="wrap">
-            <img src="img/top-story.jpg" alt="">
-            <div class="category">
-              <a href="/us"> U.S.</a </div>
-              <h2>San Francisco Residents Share Videos, Photos Of 'Apocalyptic' Skies As Wildfires Burn Nearby</h2>
-                <p>The afternoon skies were bright orange in San Francisco on Wednesday as nearby wildfires continue to blaze across the state.</p>
-        </article>
-      </section> -->
-      <div class="col1">
+      <div class="col1 container">
         <div class="col-title">FEATURED STORIES</div>
         <article class="story container-sm d-flex flex-column justify-content-start">
           <div class="wrap">
@@ -88,7 +78,7 @@
               <p>The afternoon skies were bright orange in San Francisco on Wednesday as nearby wildfires continue to blaze across the state.</p>
         </article>
       </div>
-      <div class="col2">
+      <div class="col2 container">
         <div class="col-title">TOP STORY</div>
         <article class="story container-sm d-flex flex-column justify-content-start">
           <div class="wrap">
@@ -115,7 +105,7 @@
               <p>The afternoon skies were bright orange in San Francisco on Wednesday as nearby wildfires continue to blaze across the state.</p>
         </article>
       </div>
-      <div class="col3">
+      <div class="col3 container">
         <div class="col-title">THE DEBATE</div>
         <article class="story container-sm d-flex flex-column justify-content-start">
           <div class="wrap">
@@ -343,18 +333,31 @@
         </div>
       </div>
     </section>
-    <section class="subscribe">
-
-      <span> SUBSCRIBE </span>
-      <img src="img/subsribe.png" alt="">
-      <div class="subscribe-content">
-        <p>In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</p>
+    <section class="subscribe col-sm-11 col-md-7 col-lg-8">
+      <span class="red-title"> SUBSCRIBE </span>
+      <div class="subscribe-box d-flex">
+        <img src="img/subscribe.png" alt="">
+        <div class="subscribe-content fluid-container d-flex">
+          <p>In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</p>
+          <p>All Access + Weekly Delivery.</p>
+          <p>Choose A Membership That's Perfect for You!</p>
+          <p><button class="red-button"> SUBSCRIBE </button></p>
+        </div>
       </div>
-
-
     </section>
-
-    <section class="newsletter"></section>
+    <section class="newsletter col-sm-11 col-md-5 col-lg-4">
+      <span class="red-title"> NEWSLETTER </span>
+      <div class="newsletter-box d-flex">
+        <img class="d-sm-none" src="img/newsletter.png" alt="">
+        <div class="newsletter-content fluid-container d-flex">
+          <h3>The Starting 5</h3>
+          <p>See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
+          <input type="email" name="email" id="email">
+          <p><button class="red-button"> SUBSCRIBE </button></p>
+        </div>
+      </div>
+    </section>
+    </div>
   </main>
   <footer>
     <div class="foot-line d-flex align-items-baseline container-fluid">

@@ -1,6 +1,8 @@
 body {
   width: 100%;
   max-width: 1309px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 13px
   /* margin: 0;
   padding: 0; */
 }
@@ -48,6 +50,7 @@ img {
   width: 100%;
   height: 100%;
 }
+
 /* Grid */
 .story {
   border: 1px solid black;
@@ -63,8 +66,8 @@ img {
 .col1,
 .col2,
 .col3 {
-  padding-left: 0;
-  padding-right: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .big-grid {
@@ -89,6 +92,60 @@ img {
   grid-area: three;
   background-color: pink;
 }
+
+/* Sections */
+
+.nw-icon {
+    background: url('../img/logo-n1.svg') no-repeat #f72210;
+    height: 29px;
+    width: 28px;
+    display: block;
+    margin-right: 10px;
+}
+
+.section-title{
+  border-bottom: 1px grey;
+  margin-bottom: 10px;
+  margin-top:20px;
+}
+
+.section-title span{
+  color:#333;
+  font-weight: bold;
+  font-size: 19px;
+  font-family: "Roboto Condensed",sans-serif;
+}
+
+.article-title{
+  font-size: 20px;
+}
+
+.title-link {
+  color:#000;
+  font-weight: 700;
+}
+
+.title-link:hover {
+  color:#000;
+  text-decoration: underline;
+  text-decoration-color: #f72210;
+}
+
+/* Group 2 */
+
+.group2 .img-w-sub {
+  position: relative;
+  min-height: 33px;
+}
+.group2 .img-w-sub .inner-subtitle {
+  position: absolute;
+  z-index: 1;
+  bottom:0;
+  background-color: #fff;
+  color: #f72210;
+  padding: 1% 2% 1%;
+}
+
 /* ---------------------------
     Media Query (>640px) */
 @media (min-width:640px) {

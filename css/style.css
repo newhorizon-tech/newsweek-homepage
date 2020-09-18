@@ -156,7 +156,15 @@ img {
   text-decoration-color: #f72210;
 }
 
+/* Group 1 */
+
+.mag-cover-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
 /* Group 2 */
+
 .img-w-sub {
   position: relative;
   min-height: 33px;
@@ -167,8 +175,16 @@ img {
   z-index: 1;
   bottom: 0;
   background-color: #fff;
-  color: #f72210;
   padding: 1% 2%;
+}
+
+.img-w-sub .inner-subtitle a {
+  color: #f72210;
+  font-weight: bold;
+}
+
+.img-w-sub .inner-subtitle a:hover {
+  text-decoration: none;
 }
 
 /* Combo */

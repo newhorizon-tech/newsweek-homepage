@@ -280,6 +280,7 @@ li {
 
 #editions {
   font-weight: bold;
+  border: none;
 }
 
 @media (min-width: 640px) {
@@ -303,6 +304,10 @@ li {
 
   .foot-line {
     flex-direction: row;
+  }
+
+  .foot-links li {
+    border-right: 1px solid #d9d9d9;
   }
 }
 

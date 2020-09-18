@@ -256,6 +256,7 @@ footer {
 
 .share-icons {
   margin-bottom: 12px;
+  margin-left: -10px;
 }
 
 .share-icons i {
@@ -272,6 +273,7 @@ footer {
 ul {
   list-style-type: none;
   font-size: 13px;
+  padding-left: 10px;
 }
 
 li {

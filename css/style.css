@@ -6,7 +6,7 @@ body {
   margin: 0;
 }
 
-/* Navigation bar */
+/* Header */
 
 .top-bar {
   background-color: #f72210;
@@ -266,8 +266,6 @@ li {
   font-weight: bold;
 }
 
-/* ---------------------------
-    Media Query (>640px) */
 @media (min-width: 640px) {
   .big-grid {
     display: grid;
@@ -277,8 +275,6 @@ li {
   }
 }
 
-/* ---------------------------
-    Media Query (>767px) */
 @media (min-width: 768px) {
   .subscribe-box {
     flex-direction: row;
@@ -294,8 +290,6 @@ li {
   }
 }
 
-/* ---------------------------
-    Media Query (>991px) */
 @media (min-width: 992px) {
   header .bottom-list {
     width: 80%;
